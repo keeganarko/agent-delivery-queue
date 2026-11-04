@@ -1,0 +1,30 @@
+{
+  "name": "agent-delivery-queue",
+  "version": "0.1.0",
+  "description": "A small delivery queue for agent messages that never overwrites a human draft. Reference implementation of the Agent Hub design.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "agents",
+    "mcp",
+    "queue",
+    "human-in-the-loop"
+  ],
+  "license": "FSL-1.1-MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
